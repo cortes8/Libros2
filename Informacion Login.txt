@@ -11,5 +11,10 @@ Contraseña: matias123
 
 https://github.com/cortes8/Libros2
 
+http://127.0.0.1:8000/accounts/login/
+http://127.0.0.1:8000/libros/
+http://127.0.0.1:8000/admin/
+
 pythonanywhere
+
 http://MatiNico.pythonanywhere.com/admin/login/?next=/admin/
