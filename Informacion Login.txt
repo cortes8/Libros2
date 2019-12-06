@@ -1,9 +1,15 @@
+Integrantes:Nicolas Cortes
+ 	    Matias Soto
+admin
 Usuario: cortes 
 Contraseña: duoc.2019
 
-usuario1
-duoc.2019
 
-http://ribot.pythonanywhere.com/libros
+normal
+Usuario: soto
+Contraseña: matias123
 
-http://ribot.pythonanywhere.com/admin/login/?next=/admin/
+https://github.com/cortes8/Libros2
+
+pythonanywhere
+http://MatiNico.pythonanywhere.com/admin/login/?next=/admin/
