@@ -1,0 +1,101 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creación de cuentas</title>
+    <link rel="shortcut icon" type="image/x-icon" href=" {% static 'img/iconolibros.png'  %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilosF.css' %}">
+    <script src="{% static 'js/form.js' %}"></script>
+</head>
+
+<body onload="cargarProvincias()">
+    
+<div class="contenedor">
+            <header>
+               <div class="contenedor">
+        <h1 class="icon-libros">Mis Libros</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="fontawesome-align-justify" for="menu-bar"></label>
+                  <nav class="menu">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                    <a class="nav-link" href="{% url 'galeria' %}">Galeria</a>
+                    <a href="http://ribot.pythonanywhere.com/admin/login/?next=/admin/">admin</a>
+                    <a class="nav-link" href="{% url 'formulario' %}">contacto</a>
+                  </nav>
+                </div>
+            </header>
+</div>
+
+       
+<main>
+    <section id="banner">
+        <div class="slider">
+ <ul>
+<li>
+        <img src="{% static 'img/sliderlibros.jpg' %}" alt="">
+        <img src="{% static 'img/slider2.jpg' %}" alt="">
+
+</li>
+</ul>
+</div>
+
+        <div class="contenedor">
+            <h2>Libera tu imaginación</h2>
+            <p>La lectura abre mundos infinitos</p>
+        </div>
+    </section>
+    
+</main>
+        
+
+<div class="container">
+    <div class="col-xl-12"  style="background-color:#942C14">
+      <div class="info">
+            <p class="numero"></p>
+            <p class="numero"></p>
+                <div id="redes">
+                    <div class="redes"> 
+                    <a href="http://www.facebook.com" ><img src="{% static 'img/face.tiff' %}" width="50" height="50" alt=""> </a>
+                    <a href="http://www.instagram.com" > <img src="{% static 'img/ig.tiff '%}'" width="50" height="50" alt=""> </a>
+                    <a href="https://plus.google.com" ><img src="{% static 'img/plus.tiff' %}" width="50" height="50" alt=""> </a>
+                    <a href="http://www.twitter.com" >  <img src="{% static 'img/tiw.tiff' %}" width="50" height="50" alt=""> </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="fuera">
+  <div class="hola" >
+        <div class="form__top">
+            <h2>Creación de usuario</h2>
+        </div>      
+        <form name="formulario1" class="form__reg" >
+           
+                {% csrf_token %}
+                <table>
+                  <tr><th><label for="id_primer_nombre">Primer nombre:</label></th><td><input type="text" name="primer_nombre" maxlength="100" required id="id_primer_nombre"></td></tr>
+                  <tr><th><label for="id_apellido">Apellido:</label></th><td><input type="text" name="apellido" maxlength="100" required id="id_apellido"></td></tr>
+                  <tr><th><label for="id_año_nacimiento">Año nacimiento:</label></th><td><input type="text" name="año_nacimiento" id="id_año_nacimiento"></td></tr>
+                </table>
+                <input type="submit" value="Registrar" />
+                
+            </form>
+        </form>
+    </div>
+</div>
+
+<footer class="row">
+            <div class="col-xs-12">
+                <div class="footer">
+                    <h3>  Todos los derechos reservados<br>
+                        Contacto: +56912353438<br>
+                        Email: Libros@gmail.com<br>
+                    </h3>
+                </div>
+            </div>
+</footer> 
+
+</body>
+</html>

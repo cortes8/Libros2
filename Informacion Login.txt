@@ -1,0 +1,9 @@
+Usuario: cortes 
+Contraseña: duoc.2019
+
+usuario1
+duoc.2019
+
+http://ribot.pythonanywhere.com/libros
+
+http://ribot.pythonanywhere.com/admin/login/?next=/admin/
